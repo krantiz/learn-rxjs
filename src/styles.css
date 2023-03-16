@@ -1,0 +1,14 @@
+/* Add application styles & imports to this file! */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section-header {
+  font-size: 27px;
+  font-weight: 600;
+  color: #d81b60;
+  margin-top: 10px;
+}
+.card-view {
+  background-color: #edc28a !important;
+    border-radius: 5px;
+}

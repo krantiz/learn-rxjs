@@ -1,0 +1,154 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand rxjs-styling" [routerLink]="['']">
+      <h1 *ngIf="!userActivated">RxJS</h1>
+      <div *ngIf="userActivated">
+        <img
+          src="https://rxjs.dev/generated/images/marketing/home/Rx_Logo-512-512.png"
+          class="rounded mx-auto d-block"
+          alt="RxJs"
+          style="width: 50px"
+        />
+      </div>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['/rxjs/what-and-why']"
+            [routerLinkActive]="['active']"
+            >What & Why</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['/rxjs/observables', 1234567890]"
+            [routerLinkActive]="['active']"
+            >Observables/Subscription</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['/rxjs/operators']"
+            [routerLinkActive]="['active']"
+            >Operators</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['/rxjs/subjects']"
+            [routerLinkActive]="['active']"
+            >Subjects</a
+          >
+        </li>
+      </ul>
+
+      <!-- <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form> -->
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<!-- <div class="container-fluid py-3">
+  <div class="row my-3">
+    <div class="col">
+      <label for="exampleFormControlInput1" class="form-label"
+        >Email address</label
+      >
+      <input
+        type="email"
+        class="form-control form-control-sm"
+        id="exampleFormControlInput1"
+        placeholder="name@example.com"
+      />
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <label for="exampleFormControlTextarea1" class="form-label"
+        >Example textarea</label
+      >
+      <textarea
+        class="form-control form-control-sm"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          id="flexSwitchCheckDefault"
+        />
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >Default switch checkbox input</label
+        >
+      </div>
+    </div>
+  </div>
+  <div class="row my-3">
+    <div class="col">
+      <button class="btn btn-sm btn-outline-primary" (click)="open(demoModal)">
+        Launch demo modal
+      </button>
+    </div>
+  </div>
+</div> -->
+
+<!-- <ng-template #demoModal let-modal>
+  <div class="modal-body">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 ms-auto">.col-md-4 .ms-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 ms-auto">.col-md-3 .ms-auto</div>
+        <div class="col-md-2 ms-auto">.col-md-2 .ms-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 ms-auto">.col-md-6 .ms-auto</div>
+      </div>
+      <div class="row">
+        <div class="col-sm-9">
+          Level 1: .col-sm-9
+          <div class="row">
+            <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6</div>
+            <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template> -->

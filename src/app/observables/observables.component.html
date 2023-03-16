@@ -1,0 +1,85 @@
+<h1 class="section-header">Types of Observables</h1>
+<div class="col-md-12">
+  <button
+    class="btn btn-outline-dark"
+    style="margin: 1rem;"
+    (click)="ngOnDestroy()"
+  >
+    Destroy all scriptions
+  </button>
+</div>
+
+<div class="p-3 mb-2 card-view">
+  <p>Pre-defined/Angular-defined Observable.</p>
+  <div class="row">
+    <div class="col">
+      <img
+        src="https://i.ibb.co/fdxcwnN/Screenshot-2022-11-04-at-12-44-33-AM.png"
+        style="width: 100%"
+        alt="RxJs"
+      />
+    </div>
+    <div class="col">
+      <p>Click the below button to access url value using subscription:</p>
+      <button class="btn btn-outline-dark" (click)="subscribeToAngularObs()">
+        Click Me
+      </button>
+      {{ urlValue }}
+    </div>
+  </div>
+</div>
+
+<div class="p-3 mb-2 card-view">
+  <p>Custom Observable.</p>
+  <div class="row">
+    <div class="col">
+      <img
+        src="https://i.ibb.co/gzp4mYP/Screenshot-2022-11-04-at-12-51-25-AM.png"
+        style="width: 100%"
+        alt="RxJs"
+      />
+    </div>
+    <div class="col">
+      <p>Every Custom Obserable has access to 3 functions:</p>
+      <ol>
+        <li>
+          Next(): It is similar to success and waits for next stream of data
+        </li>
+        <li>
+          Error(): It is used to catch an exception, especially when any http
+          request is subscribed
+        </li>
+        <li>
+          Complete(): It is a way to stop the subscription when work is done.
+        </li>
+      </ol>
+      <button class="btn btn-outline-dark" (click)="subscribeToCustomObs()">
+        Click to subscribe to the observable
+      </button>
+      {{ customSubscriptionValue }}
+    </div>
+  </div>
+</div>
+
+<div class="p-3 mb-2 card-view">
+  <p>RxJS defined Observable.</p>
+  <div class="row">
+    <div class="col">
+      <img
+        src="https://i.ibb.co/1bMxrky/Screenshot-2022-11-04-at-1-21-19-AM.png"
+        style="width: 100%"
+        alt="RxJs"
+      />
+    </div>
+    <div class="col">
+      <p>
+        There are many rxJs-defined observables to which we can directly
+        subscribe by importing the RxJS.
+      </p>
+      <button class="btn btn-outline-dark" (click)="subscribeToRxJsObs()">
+        Click to subscribe the rxJS interval observable
+      </button>
+      {{ rxJsSubscriptionValue }}
+    </div>
+  </div>
+</div>

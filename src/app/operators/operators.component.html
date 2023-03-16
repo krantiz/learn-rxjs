@@ -1,0 +1,43 @@
+<h1 class="section-header">Operators in RxJs</h1>
+<div class="col-md-12">
+  <button
+    class="btn btn-outline-dark"
+    style="margin: 1rem;"
+    (click)="ngOnDestroy()"
+  >
+    Destroy Subscription
+  </button>
+</div>
+
+<div class="p-3 mb-2 card-view">
+  <p>Pre-defined/Angular-defined Observable.</p>
+  <div class="row">
+    <div class="col">
+      <img
+        src="https://i.ibb.co/H43yMx5/Screenshot-2022-11-04-at-1-39-48-AM.png"
+        style="width: 100%"
+        alt="RxJs"
+      />
+    </div>
+    <div class="col">
+      <p>
+        This is similar to normal subscription but using operators we are
+        fromatting the data stream.
+      </p>
+      <p>
+        We have many operators in RxJs
+        <a href="https://www.learnrxjs.io/learn-rxjs/operators" target="_blank"
+          >click here to view</a
+        >
+      </p>
+
+      <button
+        class="btn btn-outline-dark"
+        (click)="subscribeToObsWithOperators()"
+      >
+        Click me to subscribe
+      </button>
+      {{ formattedValue }}
+    </div>
+  </div>
+</div>
